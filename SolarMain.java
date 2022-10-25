@@ -1,11 +1,17 @@
 import java.util.ArrayList;
 
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.JSlider;
+
 class SolarMain{
+
+    static JSlider sl;
 
     public static void main(String args[]){
 
         // instantiate
-        SolarSystem solar = new SolarSystem(500, 500);
+        SolarSystem solar = new SolarSystem(500, 600);
 
         Sun sun = new Sun(0,0,50,"RED");
 
@@ -30,6 +36,15 @@ class SolarMain{
 			//asteroid.setId(i); 
 			asteroids.add(asteroid); 
 		} 
+
+        // add slider
+        sl = new JSlider();
+        JPanel p = new JPanel();
+        JFrame f = new JFrame();
+        p.add(sl);
+        f.add(p);
+        f.setSize(300, 50);
+        solar.add(f);
 
 
         while(true){
@@ -57,7 +72,6 @@ class SolarMain{
             solar.drawSolarObjectAbout(moon.distance, moon.angle, moon.diamiter, moon.col, 
             moon.centreOfRotationDistance, moon.centreOfRotationAngle);
             
-
             // keep updating the screen
             solar.finishedDrawing();
 

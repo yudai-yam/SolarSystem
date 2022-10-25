@@ -18,6 +18,10 @@ public class RevolvingObject extends Sun{
         this.angle += speed;
         this.centreOfRotationAngle = angleOfParent;
     }
+
+    public void adjust_speed(){
+        
+    }
     
 
 }
