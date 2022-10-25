@@ -23,9 +23,9 @@ class SolarMain{
 
         ArrayList<RevolvingObject> asteroids = new ArrayList<RevolvingObject>(); 
 		 
-		for (double i = 0; i < 50; i+=3) 
+		for (double i = 0; i < 400; i+=Math.random() * (4 - 1 + 1) + 1)
 		{ 
-			RevolvingObject asteroid = new RevolvingObject(150, i, 4, "WHITE",
+			RevolvingObject asteroid = new RevolvingObject(150, i, 2, "WHITE",
             0, 0); 
 			//asteroid.setId(i); 
 			asteroids.add(asteroid); 
