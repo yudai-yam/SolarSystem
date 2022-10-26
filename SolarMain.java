@@ -4,9 +4,15 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JSlider;
 
-class SolarMain{
+class SolarMain extends JFrame{
 
-    static JSlider sl;
+
+    public SolarMain(){
+        JSlider slider = new JSlider(JSlider.HORIZONTAL, 0, 50, 25);  
+        JPanel panel=new JPanel();  
+        panel.add(slider);  
+        add(panel); 
+    }
 
     public static void main(String args[]){
 
@@ -36,15 +42,6 @@ class SolarMain{
 			//asteroid.setId(i); 
 			asteroids.add(asteroid); 
 		} 
-
-        // add slider
-        sl = new JSlider();
-        JPanel p = new JPanel();
-        JFrame f = new JFrame();
-        p.add(sl);
-        f.add(p);
-        f.setSize(300, 50);
-        solar.add(f);
 
 
         while(true){
