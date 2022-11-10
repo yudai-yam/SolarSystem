@@ -7,6 +7,11 @@ import javax.swing.JFrame;
 
 public class SolarMain extends JFrame{
 
+
+    /**
+     * This is the main method of this project. It places the objects and make them keep revolving
+     * @param args default argument
+     */
     public static void main(String args[]){
 
         // instantiate
@@ -40,25 +45,25 @@ public class SolarMain extends JFrame{
             // draw objects
 
             // earth
-            solar.drawSolarObjectAbout(earth.distance, earth.angle, earth.diamiter, 
+            solar.drawSolarObjectAbout(earth.distance, earth.angle, earth.diameter, 
             earth.col, earth.centreOfRotationDistance, earth.centreOfRotationAngle);
             // sun
-            solar.drawSolarObject(sun.distance, sun.angle, sun.diamiter, sun.col);
+            solar.drawSolarObject(sun.distance, sun.angle, sun.diameter, sun.col);
             // jupiter
-            solar.drawSolarObjectAbout(jupiter.distance, jupiter.angle, jupiter.diamiter, 
+            solar.drawSolarObjectAbout(jupiter.distance, jupiter.angle, jupiter.diameter, 
             jupiter.col, jupiter.centreOfRotationDistance, jupiter.centreOfRotationAngle);
             // mars
-            solar.drawSolarObjectAbout(mars.distance, mars.angle, mars.diamiter, 
+            solar.drawSolarObjectAbout(mars.distance, mars.angle, mars.diameter, 
             mars.col, mars.centreOfRotationDistance, mars.centreOfRotationAngle);
 
             // asteroids
             for (RevolvingObject currentAsteroid : asteroids){
-                solar.drawSolarObjectAbout(currentAsteroid.distance, currentAsteroid.angle, currentAsteroid.diamiter, 
+                solar.drawSolarObjectAbout(currentAsteroid.distance, currentAsteroid.angle, currentAsteroid.diameter, 
                 currentAsteroid.col, currentAsteroid.centreOfRotationDistance, currentAsteroid.centreOfRotationAngle);
             }
 
             // moon
-            solar.drawSolarObjectAbout(moon.distance, moon.angle, moon.diamiter, moon.col, 
+            solar.drawSolarObjectAbout(moon.distance, moon.angle, moon.diameter, moon.col, 
             moon.centreOfRotationDistance, moon.centreOfRotationAngle);
             
             // keep updating the screen

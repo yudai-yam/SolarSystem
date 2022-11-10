@@ -18,8 +18,8 @@ public class RevolvingObject extends Sun{
 	 * @param centreOfRotationDistance the distance part of the polar co-ordinate about which this object orbits.
 	 * @param centreOfRotationAngle the angular part of the polar co-ordinate about which this object orbits.
 	 */
-    public RevolvingObject(double distance, double angle, double diamiter, String col, double centreOfRotationDistance, double centreOfRotationAngle) {
-        super(distance, angle, diamiter, col);
+    public RevolvingObject(double distance, double angle, double diameter, String col, double centreOfRotationDistance, double centreOfRotationAngle) {
+        super(distance, angle, diameter, col);
         this.centreOfRotationDistance = centreOfRotationDistance;
         this.centreOfRotationAngle = centreOfRotationAngle;
     }
