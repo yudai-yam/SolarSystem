@@ -1,18 +1,11 @@
 import java.util.ArrayList;
-
 import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.JSlider;
+/**
+ * This class is a main class that actually places the sun and objects on window, enabling them to revolve
+ * @author Yudai Yamase
+ */
 
-class SolarMain extends JFrame{
-
-
-    public SolarMain(){
-        JSlider slider = new JSlider(JSlider.HORIZONTAL, 0, 50, 25);  
-        JPanel panel=new JPanel();  
-        panel.add(slider);  
-        add(panel); 
-    }
+public class SolarMain extends JFrame{
 
     public static void main(String args[]){
 
@@ -39,7 +32,6 @@ class SolarMain extends JFrame{
 		{ 
 			RevolvingObject asteroid = new RevolvingObject(150, i, 2, "WHITE",
             0, 0); 
-			//asteroid.setId(i); 
 			asteroids.add(asteroid); 
 		} 
 
